@@ -1,6 +1,6 @@
 <mat-card>
   <h2>User's Profile</h2>
-  <h3>{{ user.name }} {{ user.surname }} {{ user.phone }} </h3>
+  <h3>{{ user.name }} <br> {{ user.surname }} <br> {{ user.phone }} </h3>
 
   <h3 *ngIf="(joke$ | async) as userJoke">
     Joke - {{ userJoke.category }}
@@ -20,7 +20,7 @@
   </form>
 
   <mat-slide-toggle>Slide me!</mat-slide-toggle>
-
+<!--
   <h4>Basic mat-select</h4>
   <mat-form-field appearance="fill">
     <mat-label>Favorite food</mat-label>
@@ -30,7 +30,7 @@
       </mat-option>
     </mat-select>
   </mat-form-field>
-
+-->
   <h4>Basic native select</h4>
   <mat-form-field appearance="fill">
     <mat-label>Cars</mat-label>

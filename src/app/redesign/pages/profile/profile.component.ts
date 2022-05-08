@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { User } from '../../models/redesign.model';
 import { RedesignService } from '../../services/redesign.service';
 import { UsersService } from '../../services/users.service';
+import { MatSelectModule } from '@angular/material/select';
 
 @Component({
   selector: 'app-profile',

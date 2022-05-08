@@ -62,3 +62,37 @@
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row  *matRowDef="let row; columns: displayedColumns;" [routerLink]="['/redesign', 'profile', row.id]"></tr>
   </table>
+
+  <mat-card class="addUser">
+    <mat-card-title class="addUser__title">Add new user</mat-card-title>
+    <div class="phone">
+
+      <form class="example-form">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Name</mat-label>
+          <input type="text" matInput placeholder="Ivan">
+          <mat-icon matSuffix>face</mat-icon>
+        </mat-form-field>
+      </form>
+
+      <form class="example-form">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Surname</mat-label>
+          <input type="tex" matInput placeholder="Ivanov">
+          <mat-icon matSuffix>man</mat-icon>
+        </mat-form-field>
+      </form>
+
+      <form class="example-form">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Telephone</mat-label>
+          <span matPrefix>+7 &nbsp;</span>
+          <input type="tel" matInput placeholder="555-555-1234">
+          <mat-icon matSuffix>phone</mat-icon>
+        </mat-form-field>
+      </form>
+      
+      <button mat-stroked-button color="primary">Add new user</button>
+
+    </div>
+  </mat-card>
