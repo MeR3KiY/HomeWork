@@ -7,6 +7,8 @@ import { CommonModule } from '@angular/common';
 import { NetmonetModule } from './netmonet/netmonet.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { HttpClientModule } from '@angular/common/http';
     CommonModule,
     NetmonetModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

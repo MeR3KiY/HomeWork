@@ -57,6 +57,10 @@ export class FruitsComponent implements OnInit {
   constructor(private fruitService: FruitService) { }
 
   ngOnInit(): void {
+    this.newJoke();
+  }
+
+  newJoke() {
     this.fruitService.getJoke().subscribe((response) => {
       this.joke = response;
     });

@@ -18,11 +18,19 @@
 </div>
 
 <br>
+<a routerLink="/redesign">boom</a>
+<br>
+
+<br>
+<a routerLink="/profile">baah</a>
+<br>
+
+<br>
 <ng-container >
 <div class="joke" *ngIf="joke">
     RANDOM JOKE OF THE DAY: {{joke.category}} {{joke.type}} <br> {{joke.joke}} <br> A: {{joke.setup}} <br> B: {{joke.delivery}}
     <br>
-    <button (click)="ngOnInit()">new joke</button>
+    <button (click)="newJoke()">new joke</button>
 </div>
 
 </ng-container>
