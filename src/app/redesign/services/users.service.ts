@@ -34,7 +34,24 @@ export class UsersService {
       icon: 'drive_eta',
       id: 122
     }
+  
   ]
+
+  addUser(name: string, surname: string, phone: string) {
+    const newUser: User = {
+      name: name,
+      surname: surname,
+      phone: phone,
+      age: NaN,
+      joke: '',
+      icon: undefined,
+      id: 135
+    };
+    this.users = [...this.users, newUser]
+    console.log('Done!');
+    console.log(this.users)
+  }
+
 
   constructor() { }
 

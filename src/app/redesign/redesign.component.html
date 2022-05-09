@@ -70,7 +70,7 @@
       <form class="example-form">
         <mat-form-field class="example-full-width" appearance="fill">
           <mat-label>Name</mat-label>
-          <input type="text" matInput placeholder="Ivan">
+          <input type="text" matInput placeholder="Ivan" [(ngModel)]="name" [ngModelOptions]="{standalone: true}">
           <mat-icon matSuffix>face</mat-icon>
         </mat-form-field>
       </form>
@@ -78,7 +78,7 @@
       <form class="example-form">
         <mat-form-field class="example-full-width" appearance="fill">
           <mat-label>Surname</mat-label>
-          <input type="tex" matInput placeholder="Ivanov">
+          <input type="tex" matInput placeholder="Ivanov" [(ngModel)]="surname" [ngModelOptions]="{standalone: true}">
           <mat-icon matSuffix>man</mat-icon>
         </mat-form-field>
       </form>
@@ -87,12 +87,12 @@
         <mat-form-field class="example-full-width" appearance="fill">
           <mat-label>Telephone</mat-label>
           <span matPrefix>+7 &nbsp;</span>
-          <input type="tel" matInput placeholder="555-555-1234">
+          <input type="tel" matInput placeholder="555-555-1234" [(ngModel)]="phone" [ngModelOptions]="{standalone: true}">
           <mat-icon matSuffix>phone</mat-icon>
         </mat-form-field>
       </form>
       
-      <button mat-stroked-button color="primary">Add new user</button>
+      <button mat-raised-button color="primary" (click)="save()">Add new user</button>
 
     </div>
   </mat-card>

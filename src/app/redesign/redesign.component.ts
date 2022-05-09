@@ -14,7 +14,17 @@ export class RedesignComponent implements OnInit {
   displayedColumns: string[] = ['name', 'surname', 'icon', 'age', 'phone', 'joke',];
 
   users = this.usersService.getUsers();
+
+  name: any = '';
+  surname = '';
+  phone = '';
+
   constructor(private redesignService: RedesignService, private usersService: UsersService) { }
+
+  save() {
+      this.usersService.addUser(this.name, this.surname, this.phone);
+  }
+
 
   getJoke() {
     for(let i = 0; i<3; i++) {
