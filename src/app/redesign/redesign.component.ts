@@ -23,8 +23,16 @@ export class RedesignComponent implements OnInit {
 
   save() {
       this.usersService.addUser(this.name, this.surname, this.phone);
+      this.users = this.usersService.getUsers();
+
+      this.cleaner();
   }
 
+  cleaner() {
+    this.name = '';
+    this.surname = '';
+    this.phone = '';
+  }
 
   getJoke() {
     for(let i = 0; i<3; i++) {

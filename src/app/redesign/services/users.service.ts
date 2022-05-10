@@ -37,6 +37,10 @@ export class UsersService {
   
   ]
 
+  randomaizer() {
+    
+  }
+
   addUser(name: string, surname: string, phone: string) {
     const newUser: User = {
       name: name,
@@ -45,13 +49,12 @@ export class UsersService {
       age: NaN,
       joke: '',
       icon: undefined,
-      id: 135
+      id: NaN,
     };
     this.users = [...this.users, newUser]
     console.log('Done!');
     console.log(this.users)
   }
-
 
   constructor() { }
 
