@@ -1,0 +1,85 @@
+<mat-card>
+  <h2>User's Profile <span>
+    <button mat-mini-fab color="primary" aria-label="Example icon button with a menu icon" (click)="showRed()">
+      <mat-icon>edit</mat-icon>
+    </button>
+  </span>
+</h2>
+
+
+
+  <h3> {{ user.name }} <br> {{ user.surname }} <br> {{ user.phone }} </h3>
+
+  <div class="userRed" *ngIf="userClick">
+    <h3 class="red__title">Profile editing</h3>
+
+    <form class="example-form">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Name</mat-label>
+        <input type="text" matInput placeholder="Ivan" [(ngModel)]="user.name" [ngModelOptions]="{standalone: true}">
+        <mat-icon matSuffix>face</mat-icon>
+      </mat-form-field>
+    </form>
+
+    <form class="example-form">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Surname</mat-label>
+        <input type="tex" matInput placeholder="Ivanov" [(ngModel)]="user.surname" [ngModelOptions]="{standalone: true}">
+        <mat-icon matSuffix>man</mat-icon>
+      </mat-form-field>
+    </form>
+
+    <form class="example-form">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Telephone</mat-label>
+        <input type="tel" matInput placeholder="555-555-1234" [(ngModel)]="user.phone" [ngModelOptions]="{standalone: true}">
+        <mat-icon matSuffix>phone</mat-icon>
+      </mat-form-field>
+    </form>
+
+    <!--<button mat-raised-button color="primary" (click)="save()">Done!</button>-->
+
+  </div>
+
+  <h3 *ngIf="(joke$ | async) as userJoke">
+    Joke - {{ userJoke.category }}
+  </h3>
+
+  <form class="example-form">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Favorite food</mat-label>
+      <input matInput placeholder="Ex. Pizza" value="Borsch">
+    </mat-form-field>
+  </form>
+  <form class="example-form">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Leave a comment</mat-label>
+      <textarea matInput placeholder="For your letters =)"></textarea>
+    </mat-form-field>
+  </form>
+
+  <mat-slide-toggle>Slide me!</mat-slide-toggle>
+<!--
+  <h4>Basic mat-select</h4>
+  <mat-form-field appearance="fill">
+    <mat-label>Favorite food</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let food of foods" [value]="food.food">
+        Еда - {{food.food}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+-->
+  <h4>Basic native select</h4>
+  <mat-form-field appearance="fill">
+    <mat-label>Cars</mat-label>
+    <select matNativeControl required>
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </select>
+  </mat-form-field>
+  <br>
+  <button mat-raised-button color="primary">Primary</button>
+</mat-card>

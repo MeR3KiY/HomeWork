@@ -1,0 +1,104 @@
+.staff {
+  background-color: #252628;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0px 0px;
+  max-width: 915px;
+}
+
+.staff__row {
+  display: flex;
+}
+
+.staff-title__text {
+  text-align: center;
+  padding: 0 0 10px 10px;
+  font-size: 20px;
+}
+
+.container_title {
+  border-bottom: 2px solid #434542;
+}
+
+.search {
+  background-color: #252628;
+  min-height: 100px;
+}
+
+.search__row {
+  display: flex;
+}
+
+.search__body {
+  display: flex;
+  border: 2px solid #979797;
+  border-radius: 10px;
+  max-width: 270px;
+  height: 40px;
+  padding: 4px 12px;
+  background-color: #252628;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.search__text {
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  max-width: 250px;
+  width: 100%;
+  background-color: #252628;
+  outline: none;
+}
+
+.search__pctr {
+  padding: 9px 5px 0 0;
+}
+
+.empl-list {
+  background-color: #252628;
+  min-height: 10px;
+  padding-bottom: 1px;
+}
+
+.list__row {
+  
+}
+
+.list__item {
+}
+
+.item{
+  background-color: #414640;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  padding: 25px 0 0 20px;
+  margin: 0 0 10px 0;
+  height: 45px;
+}
+
+.initiales {
+  width: 150px;
+  text-align: start;
+}
+
+.telnumb {
+  width: 200px;
+}
+
+.remove-empl {
+  margin: 0 20px 0 0;
+  background-color: #414640;
+  border: none;
+  cursor: pointer;
+  max-width: 20px;
+  max-height: 20px;
+}
+
+.remove-empl__img {
+  padding: -3px -20px 0 0;
+}

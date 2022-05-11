@@ -1,0 +1,55 @@
+<div class="emplr-add">
+  <div class="container container_title">
+    <div class="title__row">
+      <div class="title__image"><img src="assets/img/regTitle.png" alt="#"></div>
+      <div class="title__text">Регистрация сотрудника</div>
+    </div>
+  </div>
+</div>
+
+<div class="emplr-columns">
+  <div class="container">
+    <div class="emplr-columns__row">
+      <div class="emplr-columns__column">
+        <div class="emplr-columns__item item">
+          <div class="item__body">
+            <div class="item__title">Имя</div>
+            <div class="item__input">
+              <input type="text" class="name regin" [(ngModel)]="name">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="emplr-columns__column">
+        <div class="emplr-columns__item item">
+          <div class="item__body">
+            <div class="item__title">Фамилия</div>
+            <div class="item__input">
+              <input type="text" class="surname regin" [(ngModel)]="surname">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="emplr-columns__column">
+        <div class="emplr-columns__item item">
+          <div class="item__body">
+            <div class="item__title">Телефон</div>
+            <div class="item__input">
+              <input type="text" class="tel regin" [(ngModel)]="tel">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="regbtn">
+  <div class="container">
+    <div class="regbtn__row">
+      <button class="regbtn-btn" (click)="save()">
+        <div class="regbtn-btn__text">Зарегистрировать</div>
+      </button>
+    </div>
+  </div>
+</div>

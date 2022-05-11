@@ -1,0 +1,19 @@
+.container {
+    max-width: 32 0px;
+}
+
+.notification__row {
+    display: flex;
+}
+
+.notification__text {
+    margin: -2px 0 0 5px;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.sendAgain{
+    display: flex;
+    justify-content: flex-start;
+    color: #d2b523;
+}

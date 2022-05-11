@@ -1,0 +1,95 @@
+.emplr-add {
+  background-color: #252628;
+  padding: 20px 0 5px 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0px 0px;
+  max-width: 915px;
+}
+
+.container_title {
+  border-bottom: 2px solid #434542;
+}
+
+.title__row {
+  display: flex;
+}
+
+.title__image {
+  padding: 0 10px 0 0;
+}
+
+.title__text {
+  font-size: 20px;
+  padding: 0 0 8px 0;
+}
+
+
+.emplr-columns {
+  background-color: #252628;
+  padding: 0 10px;
+}
+
+.emplr-columns__row {
+  display: flex;
+}
+
+.emplr-columns__column {
+  margin: 20px 7px 20px 7px;
+}
+
+.item {
+  margin: 0 0 0 -7px;
+
+}
+
+.item__title {
+  margin: 0 0 5px -215px;
+}
+
+
+.item__title::after{
+  content: "*";
+  color: yellow;
+}
+
+
+
+.regin {
+  min-width: 272px;
+  height: 40px;
+  border: 2px solid #979797;
+  border-radius: 10px;
+  background-color: #252628;
+  color: #fff;
+  font-size: 20px;
+  padding: 4px 12px;
+}
+
+
+.regbtn {
+  background-color: #252628;
+}
+
+.regbtn__row {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.regbtn-btn {
+  width: 299px;
+  height: 49px;
+  border-radius: 10px;
+  border: #f8e259;
+  margin: 0 0 43px 0;
+  background-color: #f8e259;
+
+}
+
+.regbtn-btn__text {
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}

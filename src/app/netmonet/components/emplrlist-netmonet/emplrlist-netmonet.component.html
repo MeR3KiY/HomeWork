@@ -1,0 +1,42 @@
+<div class="staff">
+  <div class="container container_title">
+    <div class="staff__row">
+        <div class="staff__pctr"><img src="assets/img/empTitle.png" alt="#"></div>
+        <div class="staff-title__text">Сотрудники</div>
+    </div>
+  </div>
+</div>
+
+<div class="search">
+  <div class="container">
+    <div class="search__row">
+      <div class="search__body">
+        <div class="search__pctr"><img src="/assets/img/search.png" alt="#"></div>
+        <input type="text" placeholder="Поиск по имени и телефону" class="search__text" [(ngModel)]="userSearch">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="empl-list">
+  <div class="container">
+      <div class="list__row">
+          <div class="list__item">
+              <div class="item" *ngFor="let user of (emplList | search : userSearch); let i = index;">
+                  <div class="initiales" >
+                      {{user.name}} {{user.surname}}
+                  </div>
+                  <div class="telnumb" >
+                      {{user.tel}}
+                  </div>
+                  <div class="notification">
+                    <app-notification></app-notification>
+                  </div>
+                  <button class="remove-empl" (click)="removeEmpl(i)">
+                    <div class="remove-empl__img"><img src="assets/img/removeBut.png" alt=""></div>
+                  </button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
