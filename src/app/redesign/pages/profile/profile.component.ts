@@ -52,7 +52,12 @@ foods = [
   phone = '';
 
   save() {
-    this.usersService.addUser(this.name, this.surname, this.phone);
+    if (this.name == '' || this.surname == '' || this.phone == '') {
+      return
+    } else {
+      this.usersService.addUser(this.name, this.surname, this.phone);
+    }
+
     //this.users = this.usersService.getUsers();
 
     this.cleaner();

@@ -51,9 +51,14 @@ export class UsersService {
       icon: undefined,
       id: this.randomaizer(100000),
     };
-    this.users = [...this.users, newUser]
+    if (name == '' || surname == '' || phone == '') {
+      return
+    } else {
+      this.users = [...this.users, newUser]
     console.log('Done!');
     console.log(this.users)
+    }
+
 
   }
 
